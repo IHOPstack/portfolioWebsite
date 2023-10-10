@@ -1,4 +1,3 @@
-function showMoreInfo(projectId) {
-    // Use this function to display more details about a project.
-    // You can use event listeners to call this function.
-}
+const burger = document.querySelector(".hamburger");
+const navi = document.getElementById("navi");
+burger.addEventListener("click", () => navi.classList.toggle("active"))
