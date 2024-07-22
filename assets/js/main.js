@@ -10,6 +10,12 @@
 		$body = $('body'),
 		$wrapper = $('#wrapper');
 
+	//Intialize in light/dark mode
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		console.log("dark mode recognized")
+		$wrapper.children().addClass("invert")
+	}
+	
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
